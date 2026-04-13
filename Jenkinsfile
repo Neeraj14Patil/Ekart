@@ -26,11 +26,10 @@ pipeline {
                 }
             }
         }
-    }
-            stage('Deploy via Compose') {
+        stage('Deploy via Compose') {
             steps {
-                // Using the new 'docker compose' command as requested
                 sh 'docker compose up -d'
             }
         }
+    }
 }
