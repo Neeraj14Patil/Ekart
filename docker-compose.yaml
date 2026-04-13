@@ -15,8 +15,8 @@ services:
 
   usermanagement-application:
     build: .
-    image: usermanagement-application-image:latest
-    container_name: usermanagement-application-1
+    image: ekart-application-image:latest
+    container_name: ekart-application-1
     ports:
       - "8082:8081"
     depends_on:
