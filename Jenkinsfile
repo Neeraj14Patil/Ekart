@@ -32,4 +32,10 @@ pipeline {
             }
         }
     }
+        post {
+        always {
+            // Clean workspace to pass Testcase #8
+            deleteDir()
+        }
+    }
 }
